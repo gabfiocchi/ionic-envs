@@ -1,4 +1,4 @@
-# Ionic Environment Variables
+# Ionic Environment Variables 🚀
 
 With this configuration, you can import environment variables anywhere, even in your `app.module.ts`.
 Also supports any number of custom environments (prod, staging, dev, etc.)
@@ -28,7 +28,7 @@ Add the following to your `tsconfig.json` in `compilerOptions`:
 
 Create a file in your base directory `config/webpack.config.js` and paste the following:
 ```javascript
-var fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 const useDefaultConfig = require('@ionic/app-scripts/config/webpack.config.js');
 const tsconfig = require('../tsconfig.json');
@@ -101,7 +101,7 @@ You can then import your environment variables anywhere!
 import { config } from '@env';
 ```
 
-To test production builds: `ionic build --env=prod` then open the www/index.html file in your browser.
+To test production builds: `ionic build --prod --env=staging` then open the www/index.html file in your browser.
 # If more than `prod` and `dev` environments are wanted
 
 1. Add to your `package.json` another run script and name it whatever you would like
