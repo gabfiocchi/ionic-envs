@@ -102,7 +102,7 @@ import { config } from '@env';
 ```
 
 To test production builds: `ionic build --prod --env=staging` then open the www/index.html file in your browser.
-# If more than `prod` and `dev` environments are wanted
+## If more than `prod` and `dev` environments are wanted
 
 1. Add to your `package.json` another run script and name it whatever you would like
 ```json
