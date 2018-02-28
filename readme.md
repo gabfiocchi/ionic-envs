@@ -33,7 +33,6 @@ const path = require('path');
 const useDefaultConfig = require('@ionic/app-scripts/config/webpack.config.js');
 const tsconfig = require('../tsconfig.json');
 
-const fs = require('fs');
 const args = require('minimist')(process.argv);
 
 let aliases = {};
