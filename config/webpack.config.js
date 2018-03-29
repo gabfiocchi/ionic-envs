@@ -21,13 +21,9 @@ useDefaultConfig.dev.resolve = useDefaultConfig.prod.resolve = {
   ],
   alias: aliases
 };
-useDefaultConfig.prod.resolve.alias = {
-  "@env": path.resolve(environmentPath('prod'))
-};
+useDefaultConfig.prod.resolve.alias['@env'] = path.resolve(environmentPath('prod'));
 
-useDefaultConfig.dev.resolve.alias = {
-  "@env": path.resolve(environmentPath(args.env))
-};
+useDefaultConfig.dev.resolve.alias['@env'] = path.resolve(environmentPath(args.env));
 
 function environmentPath(env) {
   let fileBasePath = './src/environments/environment';
